@@ -3,6 +3,7 @@ import { head, nav, sidebar } from './configs';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+	base: '/ning-notes/',
 	title: "lemon's blog",
 	description: '学习并分享各类前端的项目和知识',
 
