@@ -1,22 +1,32 @@
-.DS_Store
-node_modules
-dist
-.temp
-cache
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Log files
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Editor directories and files
+# editor directories and files
 .idea
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+.vscode
 
-# User-specific files
-docs/daily-notes
-scripts/daily-notes.json
+# dependencies
+node_modules
+
+# compiled output
+dist
+dist-dev
+build
+cache
+.cache
+.temp
+.tmp
+.turbo
+
+# log and lock files
+*.log
+yarn.lock
+package-lock.json
+
+# local env files
+.env.local
+.env.*.local
+
+# misc
+.DS_Store
+
+# user-specific files
