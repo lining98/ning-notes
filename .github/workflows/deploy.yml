@@ -1,10 +1,10 @@
 name: GitHub Actions Build and Deploy
 
-# 触发条件: push 到 master 分支后
+# 触发条件
 on:
+  # 手动触发
   workflow_dispatch:
-  repository_dispatch:
-    types: [build-and-deploy]
+  # push 到指定分支
   push:
     branches:
       - master
@@ -14,7 +14,8 @@ on:
       - 'package.json'
 
 # 设置权限
-permissions: write-all
+permissions:
+  contents: write
 
 # 设置上海时区
 env:
@@ -47,22 +48,18 @@ jobs:
           cache: 'pnpm'
 
       # 打包静态文件
-      - name: Run Script
+      - name: Build
         env:
           APP_BASE_PATH: /
         run: pnpm install && pnpm run build
 
-      - name: Copy files
-        run: cp README.md ./dist/
-
       # 部署
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          commit-message: Deploying to gh-pages from @ ${{ github.sha }} 🚀
-          # 指定仓库
-          repository-name: lining98/ning-notes
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          full_commit_message: Deploying to gh-pages from @ ${{ github.sha }} 🚀
           # GitHub Pages 读取的分支
-          branch: gh-pages
+          publish_branch: gh-pages
           # 静态文件所在目录
-          folder: dist
+          publish_dir: dist
