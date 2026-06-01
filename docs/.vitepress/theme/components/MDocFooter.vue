@@ -13,7 +13,7 @@ const { hasSidebar } = useSidebar()
 const pageId = usePageId()
 
 const isDocFooterVisible = computed(() => {
-  return !DEV || footer.message || footer.copyright || visitor.badgeId
+  return DEV || footer.message || footer.copyright || visitor.badgeId
 })
 </script>
 
@@ -21,7 +21,7 @@ const isDocFooterVisible = computed(() => {
   <div v-if="isDocFooterVisible" v-show="hasSidebar" class="m-doc-footer">
     <div class="m-doc-footer-message">
       <img
-        v-if="!DEV && visitor"
+        v-show="DEV && visitor"
         class="visitor"
         :src="`https://visitor-badge.laobi.icu/badge?page_id=${visitor.badgeId}.${pageId}`"
         title="当前页面累计访问数"

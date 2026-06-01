@@ -9,7 +9,7 @@ const { visitor } = theme.value
 
 <template>
   <img
-    v-if="!DEV && visitor"
+    v-show="DEV && visitor"
     class="visitor"
     :src="`https://visitor-badge.laobi.icu/badge?page_id=${visitor.badgeId}`"
     onerror="this.style.display='none'"
