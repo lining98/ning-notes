@@ -73,7 +73,7 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
     <template #nav-bar-title-after>
       <MNavVisitor />
     </template>
-    <template #aside-top>
+    <template #layout-top>
       <BackToTop />
     </template>
 
