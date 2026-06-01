@@ -14,7 +14,7 @@ on:
       - 'package.json'
 
 # 设置权限
-permissions: write-all
+permissions: write-all 
 
 # 设置上海时区
 env:
