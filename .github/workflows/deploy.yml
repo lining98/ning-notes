@@ -6,12 +6,7 @@ on:
   workflow_dispatch:
   # push 到指定分支
   push:
-    branches:
-      - master
-    # 只在下列路径变更时触发
-    paths:
-      - 'docs/**'
-      - 'package.json'
+    branches: [master]
 
 # 设置权限
 permissions:
@@ -21,45 +16,44 @@ permissions:
 env:
   TZ: Asia/Shanghai
 
-# 任务
 jobs:
-  build-and-deploy:
-    # 服务器环境：最新版 ubuntu
+  # 构建工作
+  build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [20]
     steps:
-      # 拉取代码
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
-
-      # 安装 pnpm
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
-
-      # 设置 node 版本
-      - name: Use Node.js ${{ matrix.node-version }}
+          fetch-depth: 0 # 如果未启用 lastUpdated，则不需要
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2 # 安装pnpm并添加到环境变量
+        with:
+          version: 9.15.6 # 指定需要的 pnpm 版本
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.node-version }}
-          cache: 'pnpm'
-
-      # 打包静态文件
-      - name: Build
-        env:
-          APP_BASE_PATH: /
-        run: pnpm install && pnpm run build
-
-      # 部署
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v4
+          node-version: 18
+          cache: pnpm # 或 pnpm / yarn
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      - name: Install dependencies
+        run: pnpm install
+      - name: Build with VitePress
+        run:  pnpm run build
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          full_commit_message: Deploying to gh-pages from @ ${{ github.sha }} 🚀
-          # GitHub Pages 读取的分支
-          publish_branch: gh-pages
-          # 静态文件所在目录
-          publish_dir: dist
+          path: .vitepress/dist
+
+  # 部署工作
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
+    runs-on: ubuntu-latest
+    name: Deploy
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
