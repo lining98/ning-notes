@@ -1,5 +1,13 @@
 /***** vitepress 样式优化 ******/
 
+@media (min-width: 768px) {
+  .VPNav {
+    .DocSearch {
+      background-color: #f5f5f5;
+    }
+  }
+}
+
 /* 大屏大一点 */
 @media (min-width: 1440px) {
   .VPDoc.has-aside .content-container.content-container {
