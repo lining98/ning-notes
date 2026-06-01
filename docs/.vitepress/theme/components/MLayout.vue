@@ -6,6 +6,7 @@ import Giscus from '@giscus/vue'
 
 import { usePageId } from '../composables'
 
+import BackToTop from './BackToTop.vue'
 import MNavVisitor from './MNavVisitor.vue'
 import MDocFooter from './MDocFooter.vue'
 
@@ -71,6 +72,9 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
     -->
     <template #nav-bar-title-after>
       <MNavVisitor />
+    </template>
+    <template #aside-top>
+      <BackToTop />
     </template>
 
     <template v-if="comment && frontmatter.comment !== false" #doc-footer-before>
