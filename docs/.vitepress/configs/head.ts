@@ -1,7 +1,7 @@
 import type { HeadConfig } from 'vitepress'
 
 export const head: HeadConfig[] = [
-  ['link', { link: 'icon', href: '/favicon.ico' }],
+  ['link', { rel: 'icon', href: '/favicon.ico' }],
   ['link', { rel: 'apple-touch-icon', href: '/favicon.ico' }],
   ['link', { rel: 'mask-icon', href: '/favicon.ico', color: '#3eaf7c' }],
   ['meta', { name: 'theme-color', content: '#3eaf7c' }],
