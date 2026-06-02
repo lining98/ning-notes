@@ -73,9 +73,6 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
     <template #nav-bar-title-after>
       <MNavVisitor />
     </template>
-    <template #layout-top>
-      <BackToTop />
-    </template>
 
     <template v-if="comment && frontmatter.comment !== false" #doc-footer-before>
       <div class="doc-comments">
