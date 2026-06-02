@@ -2,7 +2,7 @@ import { basename } from 'node:path'
 import { defineConfig } from 'vitepress'
 import MarkdownPreview from 'vite-plugin-markdown-preview'
 
-import { head, nav, sidebar, algolia } from './configs'
+import { head, nav, sidebar, search } from './configs'
 
 const APP_BASE_PATH = basename(process.env.GITHUB_REPOSITORY || '')
 
@@ -53,8 +53,8 @@ export default defineConfig({
       },
     },
 
-    /* algolia 搜索配置 */
-    algolia,
+    /* 搜索配置 */
+    search,
 
     docFooter: {
       prev: '上一篇',
