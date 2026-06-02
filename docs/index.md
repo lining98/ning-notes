@@ -5,7 +5,7 @@ layoutClass: 'm-home-layout'
 hero:
   name: 柠檬小窝
   text: 成长之路
-  tagline: 记录前端技术文档，个人知识库
+  tagline: 记录各类技术文档，扩充个人知识库
   image:
     src: /logo.png
     alt: 柠檬小窝
