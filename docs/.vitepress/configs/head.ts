@@ -9,5 +9,4 @@ export const head: HeadConfig[] = [
   ['meta', { name: 'msapplication-TileColor', content: '#000000' }],
   ['link', { rel: 'apple-touch-icon', href: '/favicon.ico' }],
   ['link', { rel: 'mask-icon', href: '/favicon.ico', color: '#3eaf7c' }],
-  ['link', { rel: 'manifest', href: '/manifest.webmanifest' }],
 ]
