@@ -22,7 +22,7 @@ export const nav: DefaultTheme.Config['nav'] = [
         ],
       },
     ],
-    activeMatch: '^/front-end',
+    activeMatch: '^/front-end/base',
   },
   {
     text: 'JavaScript',
