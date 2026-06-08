@@ -35,15 +35,18 @@ export const VueSidebar = [
     items: [
       { text: '认识Vue3', link: '/front-end/vue/vue3/' },
       { text: '创建Vue3项目', link: '/front-end/vue/vue3/create' },
-      { text: 'vue3 API', link: '/front-end/vue/vue3/api.md' },
-      { text: 'vue3 通信方式', link: '/front-end/vue/vue3/communication.md' },
-      { text: 'vue3 深入组件', link: '/front-end/vue/vue3/components.md' },
-      { text: 'vue3.3新特性', link: '/front-end/vue/vue3/vue33.md' },
+      { text: 'vue3 API', link: '/front-end/vue/vue3/api' },
+      { text: 'vue3 通信方式', link: '/front-end/vue/vue3/communication' },
+      { text: 'vue3 深入组件', link: '/front-end/vue/vue3/components' },
+      { text: 'vue3.3新特性', link: '/front-end/vue/vue3/vue33' },
     ],
   },
   {
     text: 'Vue 底层原理',
-    items: [{ text: '响应式原理', link: '/front-end/vue/principle/响应式原理' }],
+    items: [
+      { text: '响应式原理', link: '/front-end/vue/advanced/responsive' },
+      { text: 'Diff 算法', link: '/front-end/vue/advanced/diff' },
+    ],
   },
 ]
 
