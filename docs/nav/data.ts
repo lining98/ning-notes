@@ -97,7 +97,7 @@ export const NAV_DATA: NavData[] = [
         link: 'https://reactrouter.com',
       },
       {
-        icon: 'https://nextjs.org/static/favicon/safari-pinned-tab.svg',
+        icon: 'https://nextjs.org/favicon.ico?favicon.117ezoe8m31dk.ico',
         title: 'Next.js',
         desc: '一个用于 Web 的 React 框架',
         link: 'https://nextjs.org',
@@ -258,7 +258,7 @@ export const NAV_DATA: NavData[] = [
       // },
       {
         title: 'Monment',
-        icon: `${base}/image/moment-favicon.png`,
+        icon: 'https://momentjs.cn/static/img/moment-favicon.png',
         desc: 'JavaScript 日期处理类库',
         link: 'http://momentjs.cn/',
       },
@@ -376,7 +376,7 @@ export const NAV_DATA: NavData[] = [
         link: 'https://sass-lang.com',
       },
       {
-        icon: 'https://postcss.org/assets/logo-3e39b0aa.svg',
+        icon: 'https://postcss.org/assets/favicon-DbGqNhKa.ico',
         title: 'PostCSS',
         desc: '一个用 JavaScript 转换 CSS 的工具',
         link: 'https://postcss.org',
@@ -399,22 +399,22 @@ export const NAV_DATA: NavData[] = [
     title: '跨平台',
     items: [
       {
-        icon: '/icons/electron.svg',
+        icon: 'https://www.electronjs.org/zh/assets/img/favicon.ico',
         title: 'Electron',
         desc: '使用 Web 技术构建跨平台桌面应用程序',
         link: 'https://www.electronjs.org/zh/',
       },
       {
-        icon: '/icons/tauri.png',
+        icon: 'https://tauri.app/favicon.svg',
         title: 'Tauri',
         desc: '使用 Web 技术构建更小、更快、更安全的桌面应用程序',
         link: 'https://tauri.app/zh-cn/',
       },
       {
-        icon: '/icons/taro.svg',
+        icon: 'https://docs.taro.zone/img/taro-logo_180.png',
         title: 'Taro',
         desc: '多端统一开发解决方案',
-        link: 'https://taro.jd.com',
+        link: 'https://docs.taro.zone/docs/',
       },
       {
         icon: 'https://web-assets.dcloud.net.cn/unidoc/zh/icon.png',
@@ -440,7 +440,7 @@ export const NAV_DATA: NavData[] = [
         link: 'https://nodejs.org/zh-cn',
       },
       {
-        icon: 'https://expressjs.com/images/favicon.png',
+        icon: 'https://expressjs.com/favicon.svg',
         title: 'Express',
         desc: '基于 Node.js 平台，快速、开放、极简的 Web 开发框架',
         link: 'https://expressjs.com',
@@ -475,13 +475,13 @@ export const NAV_DATA: NavData[] = [
         link: 'https://echarts.apache.org/zh/index.html',
       },
       {
-        icon: 'https://antv.vision/icons/icon-72x72.png',
+        icon: 'https://mdn.alipayobjects.com/huamei_qa8qxu/afts/img/A*7svFR6wkPMoAAAAAAAAAAAAADmJ7AQ/original',
         title: 'AntV',
         desc: '蚂蚁集团全新一代数据可视化解决方案，致力于提供一套简单方便、专业可靠、无限可能的数据可视化最佳实践。',
         link: 'https://antv.vision/zh/',
       },
       {
-        icon: 'https://d3js.org/favicon.png',
+        icon: 'https://d3js.org/logo.png',
         title: 'D3.js',
         desc: '一个遵循 Web 标准用于可视化数据的 JavaScript 库',
         link: 'https://d3js.org',
@@ -523,7 +523,7 @@ export const NAV_DATA: NavData[] = [
         link: 'https://www.rollupjs.com',
       },
       {
-        icon: 'https://turbo.build/images/favicon-dark/apple-touch-icon.png',
+        icon: 'https://turborepo.dev/_next/static/media/repo-light-32x32.0nqkv~~6o4~vl.png',
         title: 'Turbo',
         desc: 'Turbo is an incremental bundler and build system optimized for JavaScript and TypeScript, written in Rust',
         link: 'https://turbo.build',
@@ -539,12 +539,6 @@ export const NAV_DATA: NavData[] = [
         title: 'esbuild',
         desc: 'An extremely fast bundler for the web',
         link: 'https://esbuild.github.io',
-      },
-      {
-        icon: 'https://swc.rs/favicon/apple-touch-icon.png',
-        title: 'SWC',
-        desc: 'Rust-based platform for the Web',
-        link: 'https://swc.rs',
       },
     ],
   },
@@ -640,13 +634,13 @@ export const NAV_DATA: NavData[] = [
     title: '前端学习资料',
     items: [
       {
-        icon: 'https://developer.mozilla.org/apple-touch-icon.6803c6f0.png',
+        icon: 'https://developer.mozilla.org/favicon.ico',
         title: 'MDN | Web 开发者指南',
         desc: 'Mozilla 的开发者平台，提供了大量关于 HTML、CSS 和 JavaScript 的详细文档以及广泛的 Web API 参考资',
         link: 'https://developer.mozilla.org/zh-CN',
       },
       {
-        icon: 'https://static.runoob.com/images/favicon.ico',
+        icon: 'https://static.char123.com/images/favicon.ico',
         title: '菜鸟教程',
         desc: '学的不仅是技术，更是梦想！',
         link: 'https://www.runoob.com',
@@ -671,7 +665,7 @@ export const NAV_DATA: NavData[] = [
         link: 'https://github.com',
       },
       {
-        icon: 'https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon.png?v=c78bd457575a',
+        icon: 'https://stackoverflow.com/Content/Sites/stackoverflow/Img/favicon.ico',
         title: 'Stack Overflow',
         desc: '全球最大的技术问答网站',
         link: 'https://stackoverflow.com',
