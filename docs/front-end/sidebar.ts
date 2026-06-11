@@ -97,9 +97,9 @@ export const JSSidebar = [
       { text: '数组去重', link: '/front-end/JavaScript/core/duplicate' },
       { text: '数组扁平化', link: '/front-end/JavaScript/core/flattening' },
 
-      { text: 'Ajax', link: '/JavaScript/core/ajax' },
-      { text: '详解数组中的reduce方法', link: '/JavaScript/core/reduce' },
-      { text: 'Event Loop 事件循环机制', link: '/JavaScript/core/eventLoop' },
+      { text: 'Ajax', link: '/front-end/JavaScript/core/ajax' },
+      { text: '详解数组中的reduce方法', link: '/front-end/JavaScript/core/reduce' },
+      { text: 'Event Loop 事件循环机制', link: '/front-end/JavaScript/core/eventLoop' },
     ],
   },
   {
