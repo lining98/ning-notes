@@ -67,7 +67,7 @@ export const NAV_DATA: NavData[] = [
       {
         icon: 'https://p1-hera.feishucdn.com/tos-cn-i-jbbdkfciu3/1ec7129d900e442d8501d810efdaa369~tplv-jbbdkfciu3-image:0:0.image',
         title: '通往AGI之路（飞书云文档）',
-        link: 'https://www.aitop100.cn/',
+        link: 'https://waytoagi.feishu.cn/wiki/QPe5w5g7UisbEkkow8XcDmOpn8e',
       },
       {
         icon: 'https://ainav.ningxiabohe.com/wp-content/uploads/2023/07/favicon.png',
