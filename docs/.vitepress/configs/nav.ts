@@ -1,10 +1,12 @@
 import type { DefaultTheme } from 'vitepress'
+import { AISidebar } from '../../ai-tech/sidebar'
 import { JSSidebar, ES6Sidebar } from '../../front-end/sidebar'
 import OthersSidebar from '../../others/sidebar'
 import ServerSidebar from '../../server/sidebar'
 
 export const nav: DefaultTheme.Config['nav'] = [
   { text: '导航', link: '/nav/' },
+  { text: 'AI', items: AISidebar as [], activeMatch: '^/ai' },
   {
     text: '前端',
     items: [
